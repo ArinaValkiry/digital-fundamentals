@@ -11,5 +11,4 @@ do
         echo "Имена: $name, Возраст: $age, Почта: $email"
     done
 
-
 done
