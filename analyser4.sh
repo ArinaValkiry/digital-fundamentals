@@ -11,11 +11,11 @@ do
         age=$(echo $info | cut -d ":" -f2)
         email=$(echo $info | cut -d ":" -f3)
 
-        if [ $age -gt $max ]
+        if [[ $age -gt $max ]]
         then
             max=$age
             echo "Самый молодой пользователь: $name $max $email "
-        elif [ $age -lt $min ]
+        elif [[ $age -lt $min ]]
         then
             min=$age
             echo "Самый старый пользователь: $name $min $email"
