@@ -10,7 +10,7 @@ do
     do
         age=$(echo $info | cut -d ":" -f2)
 
-        if [ $age -ge 18 ]
+        if [[ $age -ge 18 ]]
         then
             var18=$((var18+1))
         else
